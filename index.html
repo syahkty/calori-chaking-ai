@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check Calories with the Gemini API</title>
+</head>
+
+<body>
+  <main>
+    <h1>Check Calories with the Gemini API</h1>
+    <form>
+      <div class="image-picker">
+        <label class="image-choice" for="foto">
+          <input type="file" name="foto" id="foto" accept="image/*" capture="environment">  
+          <img id="previewImage" src="/public/baked_goods_1.jpg" alt="Preview Gambar">
+          <h2>Ambil foto</h2>
+        </label>
+      </div>
+      <div class="prompt-box">
+        <label>
+          <input name="prompt" placeholder="Enter instructions here" type="text"
+            value="Apa saja kah isi dari makan ini, dan jelsakan kalori dari masing masing bahan,dan namanya">
+        </label>
+        <button type="submit">Go</button>
+      </div>
+    </form>
+    <p class="output">(Results will appear here)</p>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
